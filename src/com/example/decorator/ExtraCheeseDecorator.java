@@ -9,7 +9,7 @@ public class ExtraCheeseDecorator extends PizzaDecorator {
 
     @Override
     public String listOrder() {
-        return pizza.listOrder() + ", Extra Cheese";
+        return pizza.listOrder() + ", Extra cheese";
     }
 
     @Override
