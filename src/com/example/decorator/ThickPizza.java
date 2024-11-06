@@ -3,11 +3,11 @@ package com.example.decorator;
 public class ThickPizza implements Pizza {
     @Override
     public String listOrder() {
-        throw new UnsupportedOperationException();
+        return "Thick crust pizza with tomato sauce";
     }
 
     @Override
     public double getCost() {
-        throw new UnsupportedOperationException();
+        return 7.99;
     }
 }

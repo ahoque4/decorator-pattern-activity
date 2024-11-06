@@ -1,10 +1,19 @@
 package com.example.decorator;
 
 public class JalapenoDecorator extends PizzaDecorator {
-    public String listOrder() {
-        throw new UnsupportedOperationException();
+    private final Pizza pizza;
+
+    public JalapenoDecorator(Pizza pizza) {
+        this.pizza = pizza;
     }
+
+    @Override
+    public String listOrder() {
+        return pizza.listOrder() + ", Jalapenos";
+    }
+
+    @Override
     public double getCost() {
-        throw new UnsupportedOperationException();
+        return pizza.getCost() + 0.10;
     }
 }
